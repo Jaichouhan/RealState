@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartPage</title>
+    <link rel="stylesheet" href="./style.css">
+     <!-- bootstrap cdn link css -->
+     <link href="./Assets/css/bootstrap.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="./Assets/slick-master/slick/slick.css" />
+     <!-- W3school icon link -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     />
+</head>
+<body>
+
+    <!-- header start  -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+      <div class="container navbar-Sapce">
+        <a class="navbar-brand" href="/index.html"
+          ><img src="./images/Untitled-13.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 Navbar_padding">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Card.html">Selling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Comapny</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Media News</a>
+            </li>
+            <div class="icon_center">
+              <i class="fa fa-heart-o icon_center_i"></i>
+              <i class="fa fa-user-o icon_center_i"></i>
+            </div>
+            <li>
+              <button class="btn-style theme-btn-1 btn_hover_effect" type="button">
+                <div class="Hover_effect_div"></div>
+                <a href="./contactus.html" class="eff-1"> Contact Now</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header end -->
+    <div class="Card_bg_color">
+    <div class="container Card_bg_color_space">
+        <div class="row">
+            <div class="col-lg-8">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/31.jpg" class="d-block w-100" alt="img">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/33.jpg" class="d-block w-100" alt="img">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/34.jpg" class="d-block w-100" alt="img">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images//35.jpg" class="d-block w-100" alt="img">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="slider_btn_style"> <i class="fa fa-angle-left"></i> </span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="slider_btn_style"><i class="fa fa-angle-right"></i></span>
+                  </button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Card_bg">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="Card_btn">Showing Now</button>
+                        <div><p class="Card_text">Book a Private Showing Today?</p></div>
+                    </div>
+                    <h1 class="Card_h1">$300.000</h1>
+                    <p class="Card_p">Auction begins on February 23rd 11:00am</p>
+                    <button class="Card_btn_style" type="button">
+                      <a href="" class="Card_a_tag_hover"> REGISTER TO BID </a> <i class="fa fa-arrow-right Card_btn_style_i"></i></button>
+                    <div class="Display_flex_between row">
+                      <div class="col-md-6">
+                        <!-- Button trigger modal -->
+<button type="button" class="model_button_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <div class="Card_section_first">
+    <i class="fa fa-comment Card_section_first_i"></i>
+    <p>Have a Questions? Ask the Owner</p>
+</div>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Detail</h5> -->
+        <button type="button" class="btn-close model_input_field_bg_cross" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="">
+          <div class="model_input_field_bg">
+               <form class="model_form_center">
+                 <div class="model_form_center_margin">
+                <label for="fname">First Name</label>
+               <input type="text" placeholder="Enter your name" class="model_input_field">
+              </div>
+              <div class="model_form_center_margin">
+               <label for="fname">Email</label>
+               <input type="email" placeholder="Enter your email" class="model_input_field">
+              </div>
+
+               <button type="sumbit" class="model_input_field_btn">Submit</button>
+              </form>
+            </div>
+           </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+                       
+
+                      </div>
+                        <div class="col-md-6">
+                   <!-- Button trigger modal -->
+<button type="button" class="model_button_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  
+  <div class="Card_section_Second">
+    <i class="fa fa-calendar Card_section_Second_i_sapce"></i>
+    <p>Book a Private Showing</p>
+</div>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deatils</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+                      </div>
+                    </div>
+                    <div class="Card_section_last">
+                      <div class="d-flex">
+                        <i class="fa fa-phone Card_section_Second_i_sapce_red"></i>
+                        <p class="Card_section_last_p">(613) 909-3805</p>
+                      </div>
+                        <div class="d-flex">
+                          <a href="#" class="card_share_icon_link">
+                          <i class="fa fa-share card_share_icon"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                 <div class="Section_second_Card_bg">
+                     <div class="Section_second_Card_bg_flex">
+                         <button class="Section_second_Card_btn">FEATURED</button>
+                         <button class="Section_second_Card_btn_S">FOR RENT</button>
+                         <p class="Section_second_Card_p"><i class="fa fa-calendar"></i> May 27,2021</p>
+                         <p class="Section_second_Card_p"><i class="fa fa-comments-o"></i> 35 Comments</p>
+                         </button>
+                     </div>
+                     <h2 class="Section_second_Card_h2">Diamond Manor Apartment</h2>
+                     <p class="Section_second_Card_p_S"><i class="fa fa-map-marker"></i> Belmont Gardens, Chicago</p>
+                    
+                     <h4 class="Section_second_Card_h4">Description</h4>
+                    <p class="Section_second_Card_p_TH">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae molestias illo facere vel dignissimos optio nemo, harum tenetur modi quam maiores, magni delectus? Libero ab veniam dolor sit nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatum veniam temporibus sequi ut possimus magni libero nobis vel nulla delectus soluta, expedita nihil totam debitis. Excepturi, nostrum maxime?</p>
+
+                    <div class="">
+                        <h3 class="Section_second_Card_h3">Property Detail</h3>
+                        <div class="Section_Third_Card_bg">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="">
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Property ID:</span>
+                                            <p class="Section_Third_Card_p">HZ29</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Home Area:</span>
+                                            <p class="Section_Third_Card_p">120 sqft</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Rooms:</span>
+                                            <p class="Section_Third_Card_p">7</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Baths:</span>
+                                            <p class="Section_Third_Card_p">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Year built:</span>
+                                            <p class="Section_Third_Card_p">1992</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="col-lg-5">
+                                        <div class="">
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Lot Area:</span>
+                                            <p class="Section_Third_Card_p">HZ29</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Lot dimensions:</span>
+                                            <p class="Section_Third_Card_p">120 sqft</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Beds:</span>
+                                            <p class="Section_Third_Card_p">7</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Price:</span>
+                                            <p class="Section_Third_Card_p">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="Section_second_Card_span">Property Status:</span>
+                                            <p class="Section_Third_Card_p">For Sale</p>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="Section_four_Card_h4">Facts and Features</h4>
+                        <div class="Section_four_Card row">
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                       
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                            <div class="Section_four_Card_Flex col-md-4 col-lg-4 col-xl-3">
+                                <i class="fa fa-bed Section_four_Card_i"></i>
+                                <div class="Section_four_Card_Div">
+                                <p class="Section_four_Card_p">Living Room</p>
+                                <span class="Section_four_Card_span">20 X 16 sq feet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="Section_five_Card_h4">From Our Gallery</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="Section_five_Card_Margin">
+                                <img src="./images/14.jpg" alt="img" class="Section_five_Card_img" data-bs-target="#exampleModal1" data-bs-toggle="modal">
+                                <img src="./images/15.jpg" alt="img" class="Section_five_Card_img_s" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="Section_five_Card_Margin">
+                                <img src="./images/16.jpg" alt="img" class="Section_five_Card_img_t" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            </div>
+                            </div>
+                        </div>
+
+
+
+
+
+<!-- Button trigger modal -->
+<div class="Model_btn_div_center">
+<button type="button" class="Model_btn_center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+  VIEW MORE
+</button></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/product01.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/product02.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/product03.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            <span class="visually-hidden"><i class='fas fa-angle-left'></i></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false"></span>
+            <span class="visually-hidden"><i class='fas fa-angle-right'></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div>
+                        <h4 class="Section_six_Card_h4">Amenities</h4>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="ltn__menu-widget">
+                                    <ul>
+                                        <li>
+                                            <label class="checkbox-item">Air Conditioning
+                                                <i class="fa fa-check checkmark"></i>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Gym
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Microwave
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Swimming Pool
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">WiFi
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="ltn__menu-widget">
+                                    <ul>
+                                        <li>
+                                            <label class="checkbox-item">Air Conditioning
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Gym
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Microwave
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Swimming Pool
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">WiFi
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="ltn__menu-widget">
+                                    <ul>
+                                        <li>
+                                            <label class="checkbox-item">Air Conditioning
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Gym
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Microwave
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">Swimming Pool
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-item">WiFi
+                                                <i class="fa fa-check checkmark"></i>
+
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="Section_seven_Card_h4">Location</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14231.00901291543!2d75.7327905!3d26.9113567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1a3a89b8a640bc9!2sEoxys%20IT%20solution%20LLP!5e0!3m2!1sen!2sin!4v1645534760395!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+  </div>
+</div>
+ <!-- footer start -->
+ <div class="Section_six">
+    <div class="Section_six_Sapce">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <ul class="Section_six_Heading_ul">
+              <li class="Section_six_Heading">
+                <a href="/index.html">
+                  <img src="/images/lofo-f.png" alt="img"
+                /></a>
+              </li>
+              <li>
+                <p class="Section_six_p">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="Section_five_li">
+                Follow Us
+                <div class="Section_five_li_margin">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook-f Section_six_i"></i
+                  ></a>
+                  <a href="https://twitter.com/i/flow/login" target="_blank">
+                    <i class="fa fa-twitter Section_six_i"></i
+                  ></a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa fa-instagram Section_six_i"></i
+                  ></a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa fa-youtube-play Section_six_i"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <ul class="Section_six_Heading_ul">
+              <li class="Section_six_Heading"><a href=""> Selling</a></li>
+              <li class="Section_six_Heading_li">
+                <a href=""> How to Sell</a>
+              </li>
+              <li class="Section_six_Heading_li1">
+                <a href=""> Appraise Your Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <ul class="Section_six_Heading_ul">
+              <li class="Section_six_Heading"><a href=""> Our Company</a></li>
+              <li class="Section_six_Heading_li1">
+                <a href=""> Contact Us</a>
+              </li>
+              <li class="Section_six_Heading_li1">
+                <a href=""> About Us</a>
+              </li>
+              <li class="Section_six_Heading_li1">
+                <a href=""> Media&amp; News</a>
+              </li>
+              <li class="Section_six_Heading_li1">
+                <a href=""> Career Opportunities</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <ul class="Section_six_Heading_ul">
+              <li class="Section_six_Heading"><a href=""> Contact Us</a></li>
+              <li>
+                <div class="Section_six_Flex">
+                  <a href=""> <i class="fa fa-phone"></i> </a>
+                  <p><a href=""> Phone</a></p>
+                </div>
+                <div><a href="" class="a_tag_style"> 1 (613)-909-4015</a></div>
+              </li>
+              <li class="Section_six_Heading_email">
+                <div class="Section_six_Flex">
+                  <a href=""> <i class="fa fa-envelope"></i></a>
+                  <p><a href=""> Email</a></p>
+                </div>
+                <div><a href="" class="a_tag_style"> nfo@unreserved.com</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="Section_last">
+        Copyright © 2022 Loremipsum. All Rights Reserved
+      </p>
+    </div>
+  </div>
+  <!-- footer end -->
+
+
+   <!-- bootstrap js cdn link -->
+   <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"
+ ></script>
+</body>
+</html>
