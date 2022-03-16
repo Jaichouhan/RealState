@@ -4,14 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>logoipsum</title>
+    <!-- bootstrap cdn link css -->
     <link href="./Assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Assets/slick-master/slick/slick.css" />
     <!-- W3school icon link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <!-- header start  -->
@@ -45,16 +59,18 @@
               <a class="nav-link" href="./Card.html">Selling</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Comapny</a>
+              <a class="nav-link" href="./properties.html">Our Comapny</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./news.html"> News</a>
             </li>
             <div class="icon_center">
-              <a href="./login.html">
+              <a href="#">
                 <i class="fa fa-heart-o icon_center_i icon_center_i_hover"></i
               ></a>
-              <a href=""> <i class="fa fa-user-o icon_center_i"></i></a>
+              <a href="./login.html">
+                <i class="fa fa-user-o icon_center_i"></i
+              ></a>
             </div>
             <li>
               <button
@@ -69,59 +85,106 @@
       </div>
     </nav>
 
-    <div class="Login_bg">
+    <div class="personalinfo_bg">
       <div class="container">
-        <div class="form-wrapperds">
-          <div class="form-section-wrpp">
-            <div class="login_page_bg">
-              <h1 class="login_page_bg_h1">LOGIN</h1>
-              <div class="login_page_bg_position">
-                <i class="fa fa-envelope login_page_bg_i"></i>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  class="login_page_bg_input"
-                />
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="personalinfo_bg_border">
+              <div class="personalinfo_bg_h3">
+                <h3 class="personalinfo_bg_h3_color">My Dashboard</h3>
               </div>
-              <div class="login_page_bg_position">
-                <i class="fa fa-lock login_page_bg_i"></i>
-                <input
-                  type="text"
-                  placeholder="Password"
-                  class="login_page_bg_input"
-                />
+              <div class="personalinfo_center">
+                <img src="" alt="img" />
+                <h3>Robert Mclean</h3>
               </div>
-              <div class="login_page_bg_position_flex">
-                <div class="login_page_bg_remeber_color">
-                  <input type="checkbox" class="login_page_bg_checkbox" />
-                  Remember me
-                </div>
-                <p class="login_page_bg_forget">Forget Password?</p>
-              </div>
-              <a href="./personal.html">
-                <button
-                  type="button"
-                  class="login_page_bg_btn login_page_bg_btn_space"
-                >
-                  LOGIN
-                </button></a
-              >
-
-              <a href="./signup.html">
-                <p class="login_page_bg_p">
-                  Don’t have an account?
-                  <span class="login_page_bg_p_span">Sign up</span>
-                </p></a
-              >
+              <ul class="personalinfo_ul">
+                <li class="personalinfo_Ul_li">
+                  <a href=""> Personal Information </a>
+                </li>
+                <li class="personalinfo_ul_border_li">
+                  <a href=""> Contact Information </a>
+                </li>
+                <li class="personalinfo_ul_border_li">
+                  <a href=""> Change Password </a>
+                </li>
+                <li class=""><a href=""> Deactivate Account </a></li>
+              </ul>
             </div>
           </div>
-          <div class="login_img_space">
-            <img
-              src="./images/Untitled-3.png"
-              alt="banner_img"
-              class="login_img_space_img"
-            />
-            <h2 class="login_img_space_text">Logoipsum</h2>
+          <div class="col-lg-9">
+            <div class="personalinfo_bg_border">
+              <div class="personalinfo_bg_h3">
+                <h3 class="personalinfo_bg_h3_color">Contact Information</h3>
+              </div>
+              <form class="personalinfo_form">
+                <div class="row">
+                  <div class="col-lg-12 personalinfo_form_grid">
+                    <label for="fname">Email Address</label>
+                    <input type="text" name="firstname" />
+                  </div>
+                  
+                 
+                  <div class="col-lg-6 personalinfo_form_grid">
+                    <label for="lname">Mobile Phone Number</label>
+                    <input type="text" name="lastname" />
+                  </div>
+                  <div class="col-lg-6 personalinfo_form_grid">
+                    <label for="lname">Secondary Phone Number</label>
+                    <input type="text" name="lastname" />
+                  </div>
+                 
+                  <div class="col-lg-12">
+                    <h4 class="personalinfo_form_select_h6">
+                      Will a spouse or family member be contacting Unreserved on
+                      your behalf?
+                    </h4>
+                    <button class="personalinfo_form_btn-yes">Yes</button>
+                    <button class="personalinfo_form_no">No</button>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <h4 class="personalinfo_form_select_h6">
+                      Preferred Day to be Contacted
+                    </h4>
+                    <button class="personalinfo_form_btn-yes">Weekday</button>
+                    <button class="personalinfo_form_no">Weekday</button>
+                    <button class="personalinfo_form_no">Any day</button>
+
+                  </div>
+
+
+                  <div class="col-lg-12">
+                    <h4 class="personalinfo_form_select_h6">
+                      Preferred Time to be Contacted
+                    </h4>
+                    <button class="personalinfo_form_btn-yes">Morning</button>
+                    <button class="personalinfo_form_no">Affternoon</button>
+                    <button class="personalinfo_form_no">Evening</button>
+                    <button class="personalinfo_form_no">Anytime</button>
+
+                  </div>
+                  <div class="col-lg-12">
+                    <h4 class="personalinfo_form_select_h6">
+                      Preferred Contact Method
+                    </h4>
+                    <button class="personalinfo_form_btn-yes">Phone Call</button>
+                    <button class="personalinfo_form_no">Text Message</button>
+                    <button class="personalinfo_form_no">Email</button>
+                    <button class="personalinfo_form_no">Any</button>
+
+                  </div>
+                  
+
+      
+
+                  <div class="col-lg-3 ">
+                    <button class="personalinfo_form_button">
+                      Save Changes
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -235,8 +298,9 @@
       </div>
     </div>
     <!-- footer end -->
-
-    <!-- bootstrap js cdn link -->
-    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
   </body>
+  <!-- bootstrap js cdn link -->
+  <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="Js/index.js"></script>
 </html>

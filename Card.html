@@ -14,6 +14,18 @@
        rel="stylesheet"
        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
      />
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 <body>
 
@@ -363,7 +375,7 @@
     <div class="modal-content">
       <div class="modal-body">
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -390,7 +402,22 @@
             <span class="carousel-control-next-icon" aria-hidden="false"></span>
             <span class="visually-hidden"><i class='fas fa-angle-right'></i></span>
           </button>
-        </div>
+        </div> -->
+           <div class="modelsilder">
+             <div>
+            <img src="./images/product01.png" class="d-block w-100" alt="...">
+          </div>
+          <div>
+            <img src="./images/product02.png" class="d-block w-100" alt="...">
+          </div>
+          <div>
+            <img src="./images/product03.png" class="d-block w-100" alt="...">
+          </div>
+           </div>
+
+
+
+
       </div>
     </div>
   </div>
@@ -546,7 +573,53 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14231.00901291543!2d75.7327905!3d26.9113567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1a3a89b8a640bc9!2sEoxys%20IT%20solution%20LLP!5e0!3m2!1sen!2sin!4v1645534760395!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
                     </div>
 
+
+                    
+
                  </div>
+                 <div class="Section_seven_bg">
+                  <div class="Section_seven_bg_btn">
+                   <button class="Section_seven_bg_btn_color">All</button>   
+                   <button class="Section_seven_bg_btn_color1">0 Bids</button>
+                   <button class="Section_seven_bg_btn_color1">0Comments</button>
+                 </div>
+                 <div class="Section_seven_bg_space">
+                   <div class="Section_seven_bg_flex">
+                     <div class="Section_seven_bg_color">
+                       <p class="Section_seven_bg_color_user">User</p>
+                       <button>Starting Price</button>
+                       <p class="Section_seven_bg_color_time">1:30am,Feb 20 2022</p>
+                     </div>
+                     <div class="Section_seven_bg_color_price_flex">
+                       <p class="Section_seven_bg_color_price">$365,000</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="Section_seven_bg_space2">
+                  <div class="Section_seven_bg_flex2">
+                    <div class="Section_seven_bg_color2">
+                      <p class="Section_seven_bg_color_user2">User</p>
+                      <button>Starting Price</button>
+                      <p class="Section_seven_bg_color_time2">1:30am,Feb 20 2022</p>
+                    </div>
+                    <div class="Section_seven_bg_color_price_flex2">
+                      <p class="Section_seven_bg_color_price2">$365,000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="Section_seven_bg_space1">
+                  <div class="Section_seven_bg_flex1">
+                    <div class="Section_seven_bg_color1">
+                      <p class="Section_seven_bg_color_user">User</p>
+                      <button>Starting Price</button>
+                      <p class="Section_seven_bg_color_time1">1:30am,Feb 20 2022</p>
+                    </div>
+                    <div class="Section_seven_bg_color_price_flex1">
+                      <p class="Section_seven_bg_color_price1">$365,000</p>
+                    </div>
+                  </div>
+                </div>
+               </div>
             </div>
         </div>
   </div>
@@ -646,8 +719,53 @@
     </div>
   </div>
   <!-- footer end -->
+  <!-- slick Carousel CDN -->
+  <script
+    type="text/javascript"
+    src="./Assets/slick-master/slick/slick.min.js"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".modelsilder").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        nextArrow:
+          '<div class="slick-custom-arrow slick-custom-arrow-right"><i class="fa fa-arrow-right"></i></div>',
+        prevArrow:
+          '<div class="slick-custom-arrow slick-custom-arrow-left"><i class="fa fa-arrow-left"></i></div>',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 470,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    });
 
-
+    
+  </script>
    <!-- bootstrap js cdn link -->
    <script
    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
